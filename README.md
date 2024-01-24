@@ -13,7 +13,8 @@ On Campus Recruiting Event
 # The Solution(s)
 In order to make this idea a reality, i need to think of the tools I am going to use. Firstly we need a way to work with images, then we need a way to scrap the data, we need to be able to take the data and put it in the correct category on a sheet. we also need a user interface to make this accessible.
 # Brainstorm
-![image](https://github.com/PeterGQ/BusinessCardOCR/assets/93812183/9b6465a9-7844-4b17-b5a6-55e44725fc8b)
+![image](https://github.com/PeterGQ/BusinessCardOCR/assets/93812183/584d02d4-c1c2-428a-b6ff-36011979669c)
+
 
 # Trial and Error
 
