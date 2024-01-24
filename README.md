@@ -18,4 +18,5 @@ In order to make this idea a reality, i need to think of the tools I am going to
 
 # Trial and Error
 
+i am trying to extract the text from the image using pytesseract but i run into an error, "pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information."
 # The Results
