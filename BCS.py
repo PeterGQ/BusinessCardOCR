@@ -244,5 +244,5 @@ def excel(data):
     return csv_file
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
