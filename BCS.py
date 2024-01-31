@@ -2,6 +2,7 @@
 import cv2
 import pytesseract
 import re
+import easyocr
 # import spacy
 import pandas as pd
 import os
@@ -59,7 +60,12 @@ def uploadImage():
         image = cv2.imread(file_path)
 
         # Use pytesseract to extract text from the image
-        extracted_text = pytesseract.image_to_string(image)
+        reader = easyocr.Reader(['en'], gpu=False)
+
+        text = reader.readtext(image)
+        s = StringText(text)
+        st = " ".join(s)
+        # extracted_text = pytesseract.image_to_string(image)
 
         data = testFunction(file_path)
         csv_filename = excel(data)
@@ -77,6 +83,13 @@ def uploadImage():
     else:
         flash('File not allowed')
         return redirect(request.url)
+
+def StringText(text):
+    word = []
+    for i in text:
+        bbox, string, score = i
+        word.append(str(string))
+    return word
 
 @app.route('/download')
 def download_file():
@@ -98,8 +111,13 @@ def testFunction(imgPath):
 def image(image):
     # take image and get text from it.
     # returns text
-    text = pytesseract.image_to_string(image)
-    return text
+    # text = pytesseract.image_to_string(image)
+    reader = easyocr.Reader(['en'], gpu=False)
+
+    text = reader.readtext(image)
+    s = StringText(text)
+    st = " ".join(s)
+    return st
 
 def scrapeNumber(number):
     phone_pattern = r'(\d{3}[-\.\s]??\d{3}[-\.\s]??\d{4}|\(\d{3}\)\s*\d{3}[-\.\s]??\d{4}|\d{3}[-\.\s]??\d{4})'
@@ -226,5 +244,5 @@ def excel(data):
     return csv_file
 
 # Press the green button in the gutter to run the script.
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
