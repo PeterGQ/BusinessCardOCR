@@ -32,9 +32,10 @@ Best - Worst Performance:
 - Pytesseract with Spacy Model
 - ![image](https://github.com/PeterGQ/BusinessCardOCR/assets/93812183/9e3398f6-8db4-48d2-a1e9-b2d431eb7d30)
 - easyOCR with Spacy Model
-- 
+- ![image](https://github.com/PeterGQ/BusinessCardOCR/assets/93812183/ccc6b916-9f69-4e36-b50d-e78f736ef894)
 - Pytesseract using Regex only
-- 
+- ![image](https://github.com/PeterGQ/BusinessCardOCR/assets/93812183/8a92e860-e904-4330-bed0-9d73f5f247b3)
 - easyOCR using Regex only
-- 
+- ![image](https://github.com/PeterGQ/BusinessCardOCR/assets/93812183/93a9c1fd-bf51-491d-8c1c-e1d0f236f188)
+
 
