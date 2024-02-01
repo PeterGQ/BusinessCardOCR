@@ -21,6 +21,9 @@ In order to make this idea a reality, i need to think of the tools I am going to
 problem: i am trying to extract the text from the image using pytesseract but i run into an error, "pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information."
 solution: i had to download the tesseract OCR and specify the path to it
 
+Being adaptable
+- As we all know, plans change and more importantly being adaptable is a very important skill. When it came to researching tools and modules, I listed out the tools that came to mind and the first results i found on the internet. some of these tools i previously listed while brainstorming did not make it to the final product because they fell short of the goal I was trying to accomplish. For example, NLTK library was decent but it missed key functionality that Spacy provided, like the ease of use and the speed of the model. Another was pytesseract because it did not have a straightforward way of including the path when i had to deploy it to the internet, which led me to use EasyOCR instead.
+
 Web Devlopment
 - I had many issues trying to deploy my flask app to the web. My goal was to accomplish this without incurring any costs, which severely limited my options.
 At first I attempted to use pythonanywhere which was recommended on an online forum. Everything went well up until I had install the dependencies in the pythonanywhere console. Apparently, I didnt have enough space on the free account so i could not use it. 
@@ -29,7 +32,8 @@ At first I attempted to use pythonanywhere which was recommended on an online fo
 - If i ever find a way to deploy this app that works, i will post it here.
 
 # The Results
-Best - Worst Performance:
+For source code for the flask app, switch the branch to master
+Best - Worst Performance: 
 - Pytesseract with Spacy Model
 - ![image](https://github.com/PeterGQ/BusinessCardOCR/assets/93812183/9e3398f6-8db4-48d2-a1e9-b2d431eb7d30)
 - easyOCR with Spacy Model
