@@ -28,4 +28,13 @@ At first I attempted to use pythonanywhere which was recommended on an online fo
 - Thirdly I tried AWS elastic Beanstalk because I thought it would be a nice way to gain some cloud experience. I found an article online that walked through the entire process. I followed all the steps but in the end, even though I had the flask app working on my local machine I continously received a bad gateway error whenever i tried to deploy on AWS.
 
 # The Results
+Best - Worst Performance:
+- Pytesseract with Spacy Model
+- ![image](https://github.com/PeterGQ/BusinessCardOCR/assets/93812183/9e3398f6-8db4-48d2-a1e9-b2d431eb7d30)
+- easyOCR with Spacy Model
+- 
+- Pytesseract using Regex only
+- 
+- easyOCR using Regex only
+- 
 
