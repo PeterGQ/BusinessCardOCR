@@ -26,6 +26,7 @@ Web Devlopment
 At first I attempted to use pythonanywhere which was recommended on an online forum. Everything went well up until I had install the dependencies in the pythonanywhere console. Apparently, I didnt have enough space on the free account so i could not use it. 
 - The next thing I tried was putting my project on Render, which was another recommendation which I found on reddit. The process was generally straighforward because I had used the software previously with a streamlit application. However, for some reason the routes on flask app seemed to always throw an error. Secondly, I could not use the pytesseract because of the specific need for a path specification to the Tesseract-OCR. I solved the second error by switching to easyOCR but even then the first problem still prevailed plus Render is painfully slow when accessing webpages.
 - Thirdly I tried AWS elastic Beanstalk because I thought it would be a nice way to gain some cloud experience. I found an article online that walked through the entire process. I followed all the steps but in the end, even though I had the flask app working on my local machine I continously received a bad gateway error whenever i tried to deploy on AWS.
+- If i ever find a way to deploy this app that works, i will post it here.
 
 # The Results
 Best - Worst Performance:
