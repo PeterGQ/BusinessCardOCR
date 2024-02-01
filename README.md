@@ -18,5 +18,13 @@ In order to make this idea a reality, i need to think of the tools I am going to
 
 # Trial and Error
 
-i am trying to extract the text from the image using pytesseract but i run into an error, "pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information."
+problem: i am trying to extract the text from the image using pytesseract but i run into an error, "pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information."
+solution: i had to download the tesseract OCR and specify the path to it
+
+Web Devlopment
+I had so many issues trying to deploy my flask app to the web. My goal was to manage to do this for free so that severly limited my options.
+At first I attempted to use pythonanywhere which was recommended on a forum online. Everything went well up until i had install the dependencies in the pythonanywhere console. Apparently i didnt have enough space on the free account so i could not use it. 
+The next thing i tried was putting my project on render. This was another recommendation which I found on reddit. The process was generally straighforward because i had used the software previously with a streamlit application. However, for some reason the routes on flask app seemed to always throw an error. secondly, i could not use the pytesseract because of the specific need for a path specification to the Tesseract-OCR. I solved the second error by switching to easyOCR but even then
+
 # The Results
+
